@@ -87,14 +87,7 @@ let isPrepared = false;
 
 export default {
     onLoad: () => {
-        if (!isPrepared) {
-            prepareSound().then(function (sound) {
-                isPrepared = true;
-                //@ts-ignore
-                soundDuration = sound.duration;
-                playSounds()
-            })
-        }
+        playSounds()
     },
     settings: Settings
 }
