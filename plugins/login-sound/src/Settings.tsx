@@ -3,7 +3,7 @@ import { useProxy } from "@vendetta/storage";
 import { getAssetIDByName } from "@vendetta/ui/assets"
 import { Forms, General } from "@vendetta/ui/components";
 import { settings } from ".";
-
+const {FormSwitchRow} = Forms;
 export default function Settings() {
     useProxy(storage);
 
@@ -23,6 +23,14 @@ export default function Settings() {
                     style={{ marginTop: -25, marginHorizontal: 12 }}
                 />
             </Forms.FormSection>
+            <FormSwitchRow
+                label="Ignore silent mode"
+                value={storage.ignoreSilent ?? false}
+                onValueChange={(value: boolean) => {
+                  storage.ignoreSilent = value;
+                } } 
+                style={{ marginBottom: 20 }}
+            />
         </General.ScrollView>
     );
 }
