@@ -13,7 +13,7 @@ const soundUrl = settings.customUrl ? settings.customUrl : "https://raw.githubus
 const soundId = 6970;
 let soundDuration = -1;
 let notificationSound = new MobileAudioSound(
-    'https://github.com/SkyDotBit/moyai-fix/raw/refs/heads/main/thud.mp3',  
+    'https://raw.githubusercontent.com/Rico040/meine-themen/master/sounds/discordo-discord.mp3',  
     'media',                                  
     1.0,                                             
     {
