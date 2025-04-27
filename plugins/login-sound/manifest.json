@@ -1,10 +1,14 @@
 {
-    "name": "LoginSound",
+    "name": "LoginSound but not silent 😎",
     "description": "ディスコード!",
     "authors": [
         {
             "name": "Rico040",
             "id": "619474349845643275"
+        },
+        {
+            "name": "Sky.Bit",
+            "id": "1154179709341552701"
         }
     ],
     "main": "src/index.ts",
