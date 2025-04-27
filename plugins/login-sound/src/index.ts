@@ -10,7 +10,7 @@ export const settings: {
 } = storage
 
 const soundUrl = settings.customUrl ? settings.customUrl : "https://raw.githubusercontent.com/Rico040/meine-themen/master/sounds/discordo-discord.mp3";
-const soundId = 6970;
+const soundId = 6969;
 let soundDuration = -1;
 let notificationSound = new MobileAudioSound(
     'https://raw.githubusercontent.com/Rico040/meine-themen/master/sounds/discordo-discord.mp3',  
